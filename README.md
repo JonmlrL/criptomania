@@ -1,1 +1,1 @@
-Para la ejecución del código es muy sencillo, tan solo deberán descargar el código fuente denominado 'mainpage' y ejecutarla en su navegador predeterminado.
+Para la ejecución del código es muy sencillo, tan solo deberán descargar el código fuente denominado 'mainpage' y ejecutarla en su navegador predeterminado y posteriormente agregar las imágenes tipo 'png' en una carpeta llamada 'images' para que se puedan visualizar exitosamente en el landing page.
