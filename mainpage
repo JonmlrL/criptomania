@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CryptoMania – Plataforma de Criptomonedas</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --main-gradient: linear-gradient(135deg, #1e3a8a, #14b8a6);
+      --bg-dark: #1f2937;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    .hero {
+      background: var(--main-gradient);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero .btn {
+      margin: 10px;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+      .bg-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  .navbar-bordered-transparent {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Un borde blanco ligeramente transparente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opcional: una sutil sombra para mayor profundidad */
+}
+
+    footer {
+      background: var(--bg-dark);
+      color: white;
+      padding: 40px 0;
+    }
+
+    table img {
+      vertical-align: middle;
+      margin-right: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #09266E; padding-top: 2px; padding-bottom: 2px;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/crypto_logo_1.png" alt="Logo CryptoMania" height="100" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prices">Precios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+      <button class="btn btn-outline-light ms-lg-3">Regístrate</button>
+    </div>
+  </div>
+</nav>
+
+  <!-- Hero -->
+<!-- Hero Carousel -->
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="bg-slide d-flex justify-content-center align-items-center text-white text-center"
+             style="background-image: url('https://wallpapers.com/images/high/crypto-background-mdkaxvjfcyrxcpox.webp');">
+          <div class="bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold">Explora el Futuro Financiero</h1>
+            <p class="lead">Descubre cómo las criptomonedas están transformando la economía.</p>
+            <a href="#prices" class="btn btn-light btn-lg">Ver precios</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="bg-slide d-flex justify-content-center align-items-center text-white text-center"
+             style="background-image: url('https://wallpapers.com/images/high/crypto-background-3nkjksays5t1121j.webp');">
+          <div class="bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold">Domina el Mercado Digital</h1>
+            <p class="lead">Visualiza cambios en tiempo real y toma decisiones inteligentes.</p>
+            <a href="#features" class="btn btn-light btn-lg">Descubrir funciones</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="bg-slide d-flex justify-content-center align-items-center text-white text-center"
+             style="background-image: url('https://wallpapers.com/images/high/crypto-background-x1kr7kl9av4itabd.webp');">
+          <div class="bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold">Únete a la Revolución Crypto</h1>
+            <p class="lead">Miles de usuarios confían en nuestros datos para crecer.</p>
+            <a href="#contact" class="btn btn-primary btn-lg">Contáctanos</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="bg-slide d-flex justify-content-center align-items-center text-white text-center"
+             style="background-image: url('https://wallpapers.com/images/high/bitcoin-logo-for-futuristic-crypto-graphics-eg5zb0iom3lrx9ie.webp');">
+          <div class="bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold">Datos en Tus Manos</h1>
+            <p class="lead">API accesible, visualizaciones y más para empoderarte.</p>
+            <a href="#prices" class="btn btn-light btn-lg">Empieza Ahora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    </div>
+  </div>
+</section>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Precios -->
+<section id="prices" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Precios en tiempo real (USD)</h2>
+    <div class="table-responsive">
+      <table class="table table-striped text-center" id="crypto-table">
+        <thead class="table-primary">
+          <tr><th>Cripto</th><th>Precio</th><th>Cambio 24h</th></tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="3">Cargando datos...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+  <!-- Características -->
+  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Características principales</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="mb-3 text-primary fs-1">📈</div>
+            <h5 class="card-title">Datos en Tiempo Real</h5>
+            <p class="card-text">Actualización constante para decisiones financieras informadas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="mb-3 text-primary fs-1">📊</div>
+            <h5 class="card-title">Análisis Visual</h5>
+            <p class="card-text">Visualiza tendencias y analiza el mercado con facilidad.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card service-card h-100 shadow-sm text-center p-4">
+            <div class="mb-3 text-primary fs-1">🔗</div>
+            <h5 class="card-title">API Accesible</h5>
+            <p class="card-text">Integra fácilmente los datos a tu plataforma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="py-5 text-center">
+    <div class="container">
+      <h2>¿Listo para comenzar?</h2>
+      <p class="lead">Solicita una demo o contáctanos para más información.</p>
+      <a href="#" class="btn btn-primary btn-lg">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 CryptoMania. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-white me-3">Privacidad</a>
+          <a href="#" class="text-white">Términos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Crypto API JS -->
+  <script>
+    async function fetchCryptoPrices() {
+      const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin,ethereum,binancecoin,solana';
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        const tbody = document.querySelector('#crypto-table tbody');
+        tbody.innerHTML = '';
+        data.forEach(coin => {
+          const row = `
+            <tr>
+              <td><img src="${coin.image}" width="24" alt="${coin.name}">${coin.name}</td>
+              <td>$${coin.current_price.toLocaleString()}</td>
+              <td class="${coin.price_change_percentage_24h >= 0 ? 'text-success' : 'text-danger'}">
+                ${coin.price_change_percentage_24h.toFixed(2)}%
+              </td>
+            </tr>`;
+          tbody.innerHTML += row;
+        });
+      } catch (error) {
+        console.error(error);
+        document.querySelector('#crypto-table tbody').innerHTML = '<tr><td colspan="3">Error al cargar datos</td></tr>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      fetchCryptoPrices();
+      setInterval(fetchCryptoPrices, 60000);
+    });
+  </script>
+</body>
+</html>
